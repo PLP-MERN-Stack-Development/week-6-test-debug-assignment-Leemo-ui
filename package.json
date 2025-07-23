@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "test": "jest --coverage",
-    "test:unit": "jest --coverage --testPathPattern=unit",
-    "test:integration": "jest --coverage --testPathPattern=integration",
-    "test:e2e": "cypress run",
-    "test:watch": "jest --watch",
-    "coverage": "jest --collectCoverage"
+  "install-all": "cd client && npm install && cd ../server && npm install",
+  "test": "jest --coverage",
+  "test:unit": "jest --coverage --testPathPattern=unit",
+  "test:integration": "jest --coverage --testPathPattern=integration",
+  "test:e2e": "cypress run",
+  "test:watch": "jest --watch",
+  "coverage": "jest --collectCoverage"
   }
 }

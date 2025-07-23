@@ -6,10 +6,9 @@
     "test": "jest"
   },
   "dependencies": {
-    // ...existing dependencies...
   },
   "devDependencies": {
-    // ...existing devDependencies...
+    
     "supertest": "^6.3.3"
   }
 }
