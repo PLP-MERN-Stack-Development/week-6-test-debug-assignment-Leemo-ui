@@ -54,4 +54,17 @@ module.exports = {
     },
   },
   testTimeout: 10000,
-}; 
+  testEnvironment: "node",
+  roots: [
+    "<rootDir>/client/src/tests",
+    "<rootDir>/server/tests"
+  ],
+  setupFilesAfterEnv: [
+    "<rootDir>/client/src/tests/setupTests.js"
+  ],
+  coverageDirectory: "coverage",
+  collectCoverageFrom: [
+    "client/src/**/*.{js,jsx}",
+    "server/src/**/*.{js,jsx}"
+  ]
+};
